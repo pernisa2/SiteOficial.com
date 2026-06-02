@@ -1,0 +1,360 @@
+/* Reseta as margens padrão e define a fonte base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; 
+}
+
+body {
+    /* Como você vai usar o background mais escuro e trabalhado, 
+       tiramos aquela camada preta pesada de cima dele */
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-color: #02040a; 
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Necessário para posicionar o menu de forma absoluta */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- Menu Superior Profissional (Canto Superior Direito) --- */
+.navbar {
+    position: absolute;
+    top: 60px;
+    right: 450px; /* Joga bem para o canto direito */
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-links a {
+    color: #f1f5f9; /* Branco bem legível */
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative; /* Necessário para o efeito da linha neon */
+    padding-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+/* Linha neon que aparece ao passar o mouse (Hover) */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #0066ff;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #0066ff;
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* A linha cresce de 0 a 100% */
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 102, 255, 0.8);
+}
+
+/* --- Layout Principal --- */
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 80px; /* Espaço entre texto e foto ajustado */
+    padding: 7px 140px 80px 20px; /* Padding superior maior por causa do menu absoluto */
+    flex: 1;
+}
+
+.hero-text {
+    max-width: 480px;
+}
+
+.hero-text h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px; /* Letras levemente mais espaçadas */
+    color: #f8fafc;
+}
+
+/* O Novo Neon Azul Elétrico */
+.text-blue {
+    color: #0066ff; 
+    text-shadow: 
+        0 0 10px rgba(0, 102, 255, 0.8), 
+        0 0 20px rgba(0, 102, 255, 0.6),
+        0 0 40px rgba(0, 102, 255, 0.4);
+}
+
+.hero-text p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 45px;
+    font-weight: 300;
+}
+
+/* --- Botões das Redes --- */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #f8fafc;
+    background: rgba(0, 0, 0, 0.3); /* Fundo um pouco mais escuro para dar contraste com a borda */
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Cores específicas dos botões */
+.btn-whatsapp {
+    border: 1px solid #d8b4fe;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+}
+.btn-whatsapp i { color: #d8b4fe; font-size: 1.2rem;}
+
+.btn-linkedin {
+    border: 1px solid #60a5fa;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+}
+.btn-linkedin i { color: #60a5fa; font-size: 1.2rem;}
+
+.btn-github {
+    border: 1px solid #fca5a5;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+}
+.btn-github i { color: #fca5a5; font-size: 1.2rem;}
+
+.btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.3);
+}
+.btn-youtube {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+.btn-youtube:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.btn-instagram {
+    border: 1px solid #e1306c;
+    color: #e1306c;
+}
+.btn-instagram:hover {
+    background-color: #e1306c;
+    color: #fff;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Isso faz os botões irem para a linha de baixo quando não houver espaço */
+    gap: 10px;       /* Isso garante que eles tenham um espacinho entre si */
+    margin-top: 15px;
+}
+/* --- O Segredo da Foto: Jogo de Luz Neon Azul --- */
+.hero-image-container {
+    border: 2px solid #0066ff; /* Borda azul elétrico */
+    border-radius: 20px;
+    padding: 0; 
+    /* Múltiplas sombras para simular o neon: brilho próximo, brilho espalhado e brilho interno */
+    box-shadow: 
+        0 0 30px rgba(0, 102, 255, 0.6), 
+        0 0 80px rgba(0, 102, 255, 0.3),
+        inset 0 0 40px rgba(0, 102, 255, 0.4);
+    background: rgba(0, 30, 80, 0.15); /* Dá um leve tom azulado no fundo da foto */
+    display: flex;
+    position: relative;
+}
+
+.profile-pic {
+    display: block;
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    
+    /* REMOVIDO: mix-blend-mode e opacity que deixavam cinza */
+    
+    /* Adiciona um leve brilho azul nas pontas da própria imagem para fundir com o cenário */
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.2); 
+    transition: transform 0.3s ease;
+}
+
+/* Efeito extra: uma leve reação profissional quando passar o mouse na foto */
+.profile-pic:hover {
+    transform: scale(1.02);
+}
+/* Isso ajuda a manter as seções escondidas sem quebrar o layout */
+.hero[style*="display: none"] {
+    display: none !important;
+}
+/* --- Grade de Serviços (3 Colunas) --- */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Estilo do Card Neon/Vidro */
+.card-servico {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card-servico:hover {
+    border-color: #0066ff;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.card-servico i {
+    font-size: 2.5rem;
+    color: #0066ff;
+    margin-bottom: 20px;
+}
+
+.card-servico h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.card-servico p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+/* --- Novo Grid para Projetos --- */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas perfeitas */
+    gap: 15px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card-projeto {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.card-projeto:hover {
+    border-color: #0066ff;
+    box-shadow: 0 0 15px rgba(0, 102, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.card-projeto h3 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+/* Atualização para os Cards de Projeto com Imagem */
+.card-projeto {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    border-radius: 15px;
+    height: 180px; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.card-projeto:hover {
+    border-color: #0066ff;
+    box-shadow: 0 0 15px rgba(0, 102, 255, 0.4);
+    transform: translateY(-5px);
+    background-blend-mode: normal;
+}
+
+.card-projeto h3 {
+    font-size: 0.9rem;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+/* Garante que o corpo do site nunca role, mantendo a experiência estática */
+body {
+    overflow: hidden; /* Isso trava a rolagem em todo o site */
+    /* ... mantenha suas outras propriedades aqui ... */
+}
+
+/* Ajustes específicos para a seção Empresa */
+#empresa {
+    height: 100vh; /* Força a seção a ter a altura exata da tela */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 60px;
+    padding: 0 50px;
+}
+
+/* Ajusta o texto e imagem para terem proporções similares */
+#empresa .hero-text {
+    max-width: 50%; /* Ocupa metade da tela */
+}
+
+#empresa .hero-image-container {
+    max-width: 40%; /* A imagem ocupa uma fatia grande e equilibrada */
+    flex-shrink: 0;
+}
+
+#empresa .profile-pic {
+    max-width: 100%; /* A imagem vai preencher o container com brilho */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábio Pernisa | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menu de Navegação Superior -->
+    <nav class="navbar container">
+        <div class="nav-links">
+            <!-- Mudamos para onclick para trocar de página -->
+            <a href="javascript:void(0)" onclick="trocarPagina('home')">Início</a>
+            <a href="javascript:void(0)" onclick="trocarPagina('servicos')">Serviços</a>
+            <a href="javascript:void(0)" onclick="trocarPagina('projetos')">Projetos</a>
+            <a href="javascript:void(0)" onclick="trocarPagina('empresa')">Empresa</a>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO HOME: Adicionei id="home" -->
+    <main id="home" class="hero container">
+        <div class="hero-text">
+           <div class="hero-text" style="margin-top: 50px;"></div> <h1>Fábio Pernisa<br><span class="text-blue">Savino Lopes</span></h1>
+            <p> Transformo ideias complexas em soluções digitais de alto impacto. Desenvolvedor Web focado na criação de experiências intuitivas inovadoras para criar interfaces únicas e na atuação da segurança da informação. Aqui você encontrará alguns dos meus principais projetos, além de acesso ao código-fonte e documentação completa com instruções detalhadas para execução.</p>
+            <div class="buttons">
+                <a href="https://w.app/equipe1" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.linkedin.com/in/fabiopernisa" target="_blank" class="btn btn-linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/pernisa2" target="_blank" class="btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.youtube.com/@NexvisionIA/shorts" target="_blank" class="btn btn-youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://www.instagram.com/nexvisionia" target="_blank" class="btn btn-instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="foto-perfil.png" alt="Foto Fábio Pernisa" class="profile-pic">
+        </div>
+        
+    </main>
+
+    <!-- SEÇÃO SERVIÇOS: Nova, usando a mesma classe hero container para manter o estilo -->
+   <section id="servicos" class="container" style="display: none; flex-direction: column;">
+    <h1 style="text-align: center; margin-top: 80px; color: #fff; font-family: 'Orbitron';"></h1>
+    
+    <div class="servicos-grid">
+        <div class="card-servico">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Criação de Sites</h3>
+            <p>Desenvolvimento de sites modernos, responsivos e otimizados para alta performace.</p>
+        </div>
+          <div class="card-servico">
+            <i class="fas fa-terminal"></i>
+            <h3>Programação de Sistemas</h3>
+            <p>Arquitetura de sistemas robustos, escaláveis e focados em automação.</p>
+        </div>
+        <div class="card-servico">
+            <i class="fas fa-video"></i>
+            <h3>Edição de Vídeos</h3>
+            <p>Edição profissional para redes sociais, YouTube e conteúdo institucional.</p>
+        </div>
+        <div class="card-servico">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Proteção de Dados e Informações</h3>
+            <p>Consultoria e adequação de sistemas às normas da LGPD e segurança da informação.</p>
+        </div>
+        <div class="card-servico">
+            <i class="fas fa-code"></i>
+            <h3>Desenvolvimento de Softwares</h3>
+            <p>Criação de aplicações personalizadas focadas na resolução de problemas complexos.</p>
+        </div>
+       <div class="card-servico">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Design de Logos</h3>
+            <p>Identidade visual única para destacar sua marca no mercado digital.</p>
+        </div>
+    </div>
+</section>
+<!-- SEÇÃO PROJETOS (A ÚNICA) -->
+<section id="projetos" class="container" style="display: none; flex-direction: column;">
+    <h1 style="text-align: center; margin: 98px 0 10px 0; color: #fff; font-family: 'Orbitron';">Sites Criados</h1>
+    <div class="projetos-grid">
+        <a href="https://pernisa2.github.io/donutspalacecafe/" class="card-projeto" style="background-image: url('projeto1.png');"><h3>Donut's Palace</h3></a>
+        <a href="https://github.com/pernisa2/allge-looks" class="card-projeto" style="background-image: url('projeto2.jpeg');"><h3>Allge Looks</h3></a>
+        <a href="https://criador-de-sites-oficial-t8whx8z.gamma.site/nexvision" class="card-projeto" style="background-image: url('projeto3.jpg');"><h3>Nexvision</h3></a>
+        <a href="https://nexvision-6q5xj9a.gamma.site" class="card-projeto" style="background-image: url('projeto4.jpg');"><h3>Nexvision Arena</h3></a>
+    </div>
+
+    <h1 style="text-align: center; margin: 20px 0 20px 0; color: #fff; font-family: 'Orbitron';">Aplicativos Criados</h1>
+    <div class="projetos-grid">
+        <a href="https://github.com/pernisa2/Consulta-CNPJ" class="card-projeto" style="background-image: url('projeto5.jpeg');"><h3>Consulta CNPJ</h3></a>
+        <a href="https://pernisa2.github.io/Smart-List/" class="card-projeto" style="background-image: url('projeto6.jpeg');"><h3>Smart List</h3></a>
+        <a href="https://pernisa2.github.io/Batalha-dos-elementos/" class="card-projeto" style="background-image: url('projeto7.png');"><h3>Batalha Dos Elementos</h3></a>
+        <a href="https://pernisa2.github.io/tarefas-do-dia/" class="card-projeto" style="background-image: url('projeto8.png');"><h3>Tarefas Diárias</h3></a>
+    </div>
+</section>
+
+    <!-- SEÇÃO PROJETOS -->
+<section id="projetos" class="container" style="display: none; flex-direction: column;">
+    <h1 style="text-align: center; margin: 98px 0 20px 0; color: #fff; font-family: 'Orbitron';">Sites Criados</h1>
+    <div class="projetos-grid">
+        <a href="https://pernisa2.github.io/donutspalacecafe/" class="card-projeto" style="background-image: url('projeto1.png');"><h3>Donut's Palace</h3></a>
+        <a href="https://github.com/pernisa2/allge-looks" class="card-projeto" style="background-image: url('projeto2.jpeg');"><h3>Allge Looks</h3></a>
+        <a href="https://criador-de-sites-oficial-t8whx8z.gamma.site/nexvision" class="card-projeto" style="background-image: url('projeto3.jpg');"><h3>Nexvision</h3></a>
+        <a href="https://nexvision-6q5xj9a.gamma.site" class="card-projeto" style="background-image: url('projeto4.jpg');"><h3>Nexvision Arena</h3></a>
+    </div>
+
+    <h1 style="text-align: center; margin: 50px 0 20px 0; color: #fff; font-family: 'Orbitron';">Aplicativos Criados</h1>
+    <div class="projetos-grid">
+        <a href="https://github.com/pernisa2/Consulta-CNPJ" class="card-projeto" style="background-image: url('projeto5.jpeg');"><h3>Consulta CNPJ</h3></a>
+        <a href="https://pernisa2.github.io/Smart-List/" class="card-projeto" style="background-image: url('projeto6.jpeg');"><h3>Smart List</h3></a>
+        <a href="https://pernisa2.github.io/Batalha-dos-elementos/" class="card-projeto" style="background-image: url('projeto7.png');"><h3>Batalha Dos Elementos</h3></a>
+        <a href="https://pernisa2.github.io/tarefas-do-dia/" class="card-projeto" style="background-image: url('projeto8.png');"><h3>Tarefas Diárias</h3></a>
+    </div>
+
+</section>
+<section id="empresa" style="display: none; flex-direction: row; align-items: center; justify-content: flex-start; gap: 40px; padding-top: 170px; padding-left: 24%; height: 80vh; width: 100%;">
+    
+    <div class="hero-text" style="max-width: 600px; flex-shrink: 0;">
+        <h1 class="text-blue" style="margin-bottom: 25px; font-family: 'Orbitron', sans-serif; white-space: nowrap; font-size: 2.2rem;">Sobre a NexVision</h1>
+        
+        <p style="color: #fff; line-height: 1.6; font-size: 1.05rem; text-align: justify; margin: 0;">
+            A NexVision é uma empresa de tecnologia fundada em janeiro de 2025 por Fábio Savino, com a missão de transformar ideias em soluções digitais inovadoras. Atuamos no desenvolvimento de softwares, sistemas personalizados, websites profissionais, criação de logotipos e edição de vídeos, oferecendo serviços completos para empresas.
+            <br><br>
+            Nosso compromisso é unir tecnologia, criatividade e inovação para entregar projetos de alta qualidade, focados em desempenho, segurança e experiência do usuário. Cada solução é desenvolvida de forma estratégica para atender às necessidades específicas de cada cliente.
+            <br><br>
+            A empresa também expandiu sua atuação através da <strong>NexVision Arena</strong>, uma loja especializada em produtos e acessórios gamers, e a <strong>NexVision IA</strong>, nosso canal no YouTube dedicado a tecnologia e inovação. Hoje, a NexVision conecta tecnologia, criatividade e conhecimento em um único ecossistema.
+        </p>
+    </div>
+
+    <div class="hero-image-container" style="max-width: 450px; flex-shrink: 0; border: 2px solid #0066ff; border-radius: 20px; overflow: hidden; box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);">
+        <img src="foto-empresa.jpeg" alt="NexVision" style="width: 100%; display: block;">
+    </div>
+</section>
+
+<script>
+    function trocarPagina(id) {
+        const secoes = ['home', 'servicos', 'projetos', 'empresa'];
+        secoes.forEach(s => {
+            const el = document.getElementById(s);
+            if(el) el.style.display = 'none';
+        });
+        
+        const target = document.getElementById(id);
+        if(target) target.style.display = (id === 'home') ? 'flex' : 'flex';
+    }
+</script>
+    
+</body>
+</html>
