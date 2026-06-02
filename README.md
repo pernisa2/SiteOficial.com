@@ -54,3 +54,9 @@ Este é um projeto de código aberto (Open Source). Você pode visualizar o cód
 
 * **GitHub:** [@pernisa2](https://github.com/pernisa2)
 * **Foco:** Ciência da Computação, Desenvolvimento Web e Cibersegurança.
+
+### 📐 Demonstração Visual
+
+<p align="center">
+* <img width="1600" height="562" alt="ChatGPT Image 2 de jun  de 2026, 00_26_12" src="https://github.com/user-attachments/assets/2cbebeb7-cbd3-41c5-b54a-e491d70b0679" />
+</p>
