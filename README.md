@@ -55,6 +55,8 @@ Este é um projeto de código aberto (Open Source). Você pode visualizar o cód
 * **GitHub:** [@pernisa2](https://github.com/pernisa2)
 * **Foco:** Ciência da Computação, Desenvolvimento Web e Cibersegurança.
 
+---
+
 ### 📐 Demonstração Visual
 
 <p align="center">
