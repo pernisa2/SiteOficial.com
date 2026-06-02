@@ -14,7 +14,7 @@
 
 Veja o meu portfólio em ação:
 
-👉 **[Acessar o Site Oficial](https://pernisa2.github.io/SiteOficial/)**
+👉 **[Acessar o Site Oficial](https://pernisa2.github.io/SiteOficial.com/)**
 
 ---
 
